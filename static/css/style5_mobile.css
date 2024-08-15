@@ -1,0 +1,176 @@
+
+.main{
+    background-image: url("classroomhorror.png");
+    background-size: cover;
+  
+}
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  padding: 1rem;
+  background: #333;
+  opacity: 0.75;
+  color: #fff;
+  z-index:10000;
+  box-sizing: border-box;
+}
+
+.box {
+      /*width:250px;
+      height:175px;*/
+      /*background-size: cover;*/
+      position: relative;
+      background-repeat: no-repeat;
+    }
+    .box-text {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      font-size: 1rem;
+      font-family:kowai;
+      line-height: 2rem;
+
+
+    }
+    .box1 {
+        background: url("images/irigutihorror.png");
+      }
+    .box2 {
+        background: url("images/classroomhorror.png");
+      }
+    .box3 {
+        background: url("images/classroom2horror.png");
+      }  
+    .box4 {
+        background: url("images/classroom3horror.png");
+      } 
+    .box5 {
+        background: url("images/samunehorror.png");
+      } 
+
+    /*.box2 {
+      width:250px;
+      height:175px;
+      z-index: 0;
+      content: “”;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0,0,0,0.9);
+    }*/
+/*画面全体の設定*/
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-family:serif;
+}
+.red{
+    color:red;
+ } 
+.big{
+    font-size: 3rem;
+    /*writing-mode: vertical-rl;*/
+ }
+/*固定する背景*/
+div {
+  box-sizing: border-box;
+  color: #FFF;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 5%;
+}
+.parallax-bg {
+  background-image: url('images/casinof_mini7.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: serif;
+}
+ 
+/*スクロールするコンテンツ*/
+.scrollbox {
+  background-color: #111;
+}
+
+
+/* wrap */
+
+.hero {
+  position: relative;
+}
+
+/* video */
+
+.video-box {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* overlay */
+
+.overlay::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* text */
+
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+h1 {
+  font-family: Roboto;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  padding: 0 3rem;
+  text-align: center;
+  color: #fff;
+}
+
